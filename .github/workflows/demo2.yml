@@ -1,0 +1,17 @@
+name: Git Actionsdemo
+
+on:
+  push:
+    branches: [ main ]
+#     paths-ignore: [.github/**]
+  pull_request:
+    branches: [ main ]
+#   schedule:
+#     - cron: '15 6 * * 0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: name of the step
+        run: echo Hello, world!
