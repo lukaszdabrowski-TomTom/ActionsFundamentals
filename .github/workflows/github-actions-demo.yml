@@ -9,10 +9,23 @@ on:
   schedule:
     - cron: '15 6 * * 0'
 
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: name of the step
+#         run: echo Hello, world!
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - name: name of the step
-        run: echo Hello, world!
-    
+      - run: |
+          echo "🎉 The job was triggered by event: ${{ github.event_name }}"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
+        
+      - uses: actions/checkout@v3.0.2
+
+      - name: List files in the repository
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree    
