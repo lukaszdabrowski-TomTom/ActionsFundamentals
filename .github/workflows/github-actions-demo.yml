@@ -6,4 +6,6 @@ jobs:
   build:
     run-on: ubuntu-latest
     steps:
-      -run: echo "Hello wordl!"
+      -name: name
+       run: echo "Hello wordl!"
+      
