@@ -5,7 +5,7 @@ on: [push, issues]
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
-          
-          run: echo Hello, world!
+    steps:
+      - name name of the step
+        run: echo Hello, world!
       
