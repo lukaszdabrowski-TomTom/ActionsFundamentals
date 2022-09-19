@@ -6,6 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name name of the step
+      - name: name of the step
         run: echo Hello, world!
       
