@@ -4,8 +4,8 @@ on: [push, issues]
 
 jobs:
   build:
-    run-on: ubuntu-latest
-    steps:
-      -name: name
-       run: echo "Hello wordl!"
+    runs-on: ubuntu-latest
+      steps:
+          
+          run: echo Hello, world!
       
